@@ -9,18 +9,72 @@
     margin: 0;
     padding: 0;
     font-family: 'Wix Madefor Display', sans-serif;
-}
-
-div {
-    width: 100vw;
-    height: 100vh;
-    background-color: #4444;
+    color: white;
 }
 
 /* Darsteller CSS */
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 div.container {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.container>.steckbrief {
+    position: relative;
+    width: 60%;
+    height: 80%;
+    /* display: flex;
+    flex-direction: column; */
     background-color: var(--lightBlue);
+    border-radius: 3rem;
+}
+
+.steckbrief>img {
+    padding: 1rem;
+    /* align-self: center; */
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    width: 30%;
+}
+
+.container:nth-child(2n)>.steckbrief {
+    background-color: var(--darkBlue);
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+p {
+    margin: 1rem 2rem;
+    font-size: 1.3rem;
+}
+
+.steckbrief>p:first-of-type {
+    width: clamp(35ch, 50%, 70ch);
+    margin-left: auto;
+    text-align: justify;
+}
+
+p>span {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.container:first-of-type {
+    background-image: url("../images/pan-am.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
