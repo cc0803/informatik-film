@@ -25,11 +25,13 @@ div.container {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container>.steckbrief {
     position: relative;
-    width: 60%;
+    width: 70%;
     height: 80%;
     /* display: flex;
     flex-direction: column; */
@@ -38,12 +40,12 @@ div.container {
 }
 
 .steckbrief>img {
-    padding: 1rem;
     /* align-self: center; */
     position: absolute;
     top: 4rem;
     left: 2rem;
-    width: 30%;
+    width: 20vw;
+    height: 20vw;
 }
 
 .container:nth-child(2n)>.steckbrief {
@@ -54,7 +56,7 @@ h3 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 p {
@@ -64,7 +66,7 @@ p {
 
 .steckbrief>p:first-of-type {
     width: clamp(35ch, 50%, 70ch);
-    margin-left: auto;
+    margin-left: 27vw;
     text-align: justify;
 }
 
@@ -75,6 +77,20 @@ p>span {
 
 .container:first-of-type {
     background-image: url("../images/pan-am.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.container:nth-of-type(2) {
+    background-image: url("../images/darsteller/office.jpg");
+}
+
+.container:nth-of-type(3) {
+    background-image: url("../images/darsteller/diner.jpg");
+}
+
+.container:nth-of-type(4) {
+    background-image: url("../images/darsteller/father.jpg");
+}
+
+.container:nth-of-type(5) {
+    background-image: url("../images/darsteller/prostitute.jpg");
 }
