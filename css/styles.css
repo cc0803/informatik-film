@@ -61,7 +61,7 @@ h3 {
 
 p {
     margin: 1rem 2rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .steckbrief>p:first-of-type {
@@ -93,4 +93,8 @@ p>span {
 
 .container:nth-of-type(5) {
     background-image: url("../images/darsteller/prostitute.jpg");
+}
+
+.container:nth-of-type(6) {
+    background-image: url("../images/airport.jpg");
 }
