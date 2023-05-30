@@ -33,19 +33,18 @@ div.container {
     position: relative;
     width: 70%;
     height: 80%;
-    /* display: flex;
-    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:  1fr 3fr 1fr 1fr;
     background-color: var(--lightBlue);
     border-radius: 3rem;
 }
 
 .steckbrief>img {
     /* align-self: center; */
-    position: absolute;
-    top: 4rem;
-    left: 2rem;
-    width: 20vw;
-    height: 20vw;
+    width: 80%;
+    margin: auto;
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 .container:nth-child(2n)>.steckbrief {
@@ -57,17 +56,28 @@ h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 p {
-    margin: 1rem 2rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .steckbrief>p:first-of-type {
     width: clamp(35ch, 50%, 70ch);
-    margin-left: 27vw;
     text-align: justify;
+    grid-area: 2 / 2 / 3 / 3;
+    margin: 0 auto;
+}
+
+p:nth-of-type(2) {
+    grid-area: 3 / 1 / 4 / 3;
+    margin: 1rem 3rem;
+}
+
+p:nth-of-type(3) {
+    grid-area: 4 / 1 / 5 / 3;
+    margin: 0.5rem 3rem;
 }
 
 p>span {
@@ -93,4 +103,8 @@ p>span {
 
 .container:nth-of-type(5) {
     background-image: url("../images/darsteller/prostitute.jpg");
+}
+
+.container:nth-of-type(6) {
+    background-image: url("../images/airport.jpg");
 }
