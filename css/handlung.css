@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --lightBlue: #0085c7;
+    --darkBlue: #00438c;
+    color: white;
+}
+
+* {
+    font-family: 'Wix Madefor Display', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: var(--darkBlue);
+    border-radius: 3rem 3rem 0 0;
+    margin-bottom: 3px;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: var(--lightBlue);
+}
+
+.part>p {
+    width: clamp(40ch, 50%, 70ch);
+    font-size: 20px;
+    padding: 1.5rem;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.part {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.part>img {
+    width: 45%;
+    margin: 1.5rem;
+}
+
+h1, h3 {
+    text-align: center;
+    margin: 1rem;
+}
+
+h1 {
+    padding-top: 1rem;
+    font-size: 34px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+p>a {
+    color: var(--darkBlue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p>a:active {
+    color: var(--darkBlue); 
+}
+
+
+/* .il {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-top: 100px solid transparent;
+    border-right: 100px solid black;
+    border-bottom: 100px solid transparent;
+} */
