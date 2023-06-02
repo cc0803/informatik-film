@@ -26,7 +26,7 @@
 }
 
 .part>p {
-    width: clamp(40ch, 50%, 70ch);
+    width: clamp(40ch, 100%, 70ch);
     font-size: 20px;
     padding: 1.5rem;
     text-align: justify;
@@ -77,6 +77,14 @@ p>a:active {
     color: var(--darkBlue); 
 }
 
+.video {
+    margin: 1rem auto;
+}
+
+.video>iframe {
+    height: 400px;
+    width: calc(16 / 9 * 400px);
+}
 
 /* .il {
     width: 0;
