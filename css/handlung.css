@@ -23,6 +23,7 @@
     width: 80vw;
     margin: 0 auto;
     background-color: var(--lightBlue);
+    border-radius: 0 0 3rem 3rem;
 }
 
 .part>p {
@@ -44,6 +45,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 4rem;
 }
 
 .part>img {
