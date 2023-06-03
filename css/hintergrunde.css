@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --lightBlue: #0085c7;
+    --darkBlue: #00438c;
+    color: white;
+}
+
+* {
+    font-family: 'Wix Madefor Display', sans-serif;
+    box-sizing: border-box;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow {
+    margin: 5rem;
+    height: 8vw;
+    width: 70vw;
+    position: relative;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+div.tip-right {
+    width: 0;
+    height: 0;
+    border-top: 5vw solid var(--lightBlue);
+    border-right: 5vw solid var(--lightBlue);
+    border-bottom: 5vw solid transparent;
+    border-left: 5vw solid transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -5vw;
+    top: -1vw; 
+    background-color: transparent;
+}
+
+.light {
+    background-color: var(--lightBlue);
+    border-color: var(--lightBlue);
+}
+
+.dark {
+    background-color: var(--darkBlue);
+    border-color: var(--darkBlue);
+}
