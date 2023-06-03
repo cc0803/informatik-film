@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(45deg, rgb(72, 78, 93), rgb(204, 219, 247));
+}
+
 .flex-center {
     display: flex;
     justify-content: center;
@@ -49,4 +53,29 @@ div.tip-right {
 .dark {
     background-color: var(--darkBlue);
     border-color: var(--darkBlue);
+}
+
+.container>p {
+    font-size: 20px;
+    width: clamp(40ch, 80%, 70ch);
+    text-align: justify;
+    padding: 0;
+    margin: 2rem auto;
+}
+
+.container {
+    width: 70vw;
+    background-color: var(--darkBlue);
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+}
+
+p>a {
+    color: var(--lightBlue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p>a:active {
+    color: var(--lightBlue); 
 }
