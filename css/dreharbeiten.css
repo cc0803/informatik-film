@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --lightBlue: #0085c7;
+    --darkBlue: #00438c;
+    color: white;
+}
+
+* {
+    font-family: 'Wix Madefor Display', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    gap: 1.5rem;
+    place-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: #00438ccc;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--lightBlue);
+    grid-area: 1 / 1 / 2 / 4;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 0;
+    border: 4px solid var(--lightBlue);
+    border-radius: 0.5rem;
+}
+
+h3 {
+    margin: 0 1rem;
+    font-size: 22px;
+}
+
+h4 {
+    margin: 0.8rem 0 0 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0.5rem 1.5rem 1rem 1.5rem;
+    text-align: justify;
+    
+}
+
+.card img {
+    width: calc(16/9 * 40%);
+    height: 40%;
+    margin: 1rem;
+}
