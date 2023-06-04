@@ -108,3 +108,26 @@ p>span {
 .container:nth-of-type(6) {
     background-image: url("../images/airport.jpg");
 }
+
+/* Quellen styles */
+
+body.dreharbeiten { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1.h1 {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 3rem;
+    place-self: center;
+    text-align: center;
+    color: var(--darkBlue);
+    padding: 1rem;
+    border: 4px solid var(--darkBlue);
+    border-radius: 0.5rem;
+}
+
+.quellen>li>a {
+    color: var(--lightBlue);
+}
