@@ -1,13 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --lightBlue: #0085c7;
+    --darkBlue: #00438c;
+    color: white;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 
+header {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
 
-body {
-    background-image: url("../images/airport.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: auto;
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#vid1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.arrow {
+    width: 40vw;
+    height: 20vh;
+    background-color: #0085c7cc;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+}
+
+.second {
+    background-color: #00438ccc;
+    right: 30vw;
+    top: 50vh;
+    transform: translateX(-100%);
+}
+
+.right {
+    width: 0;
+    height: 0;
+    border-top: 7vw solid #00438ccc;
+    border-right: 7vw solid #00438ccc;
+    border-bottom: 7vw solid transparent;
+    border-left: 7vw solid transparent;
+    transform: rotate(45deg);
+    position: relative;
+    right: -33vw;
+    top: -2vw;
+}
+
+.left {
+    width: 0;
+    height: 0;
+    border-top: 7vw solid #0085c7cc;
+    border-left: 7vw solid #0085c7cc;
+    border-bottom: 7vw solid transparent;
+    border-right: 7vw solid transparent;
+    transform: rotate(-45deg);
+    position: relative;
+    left: -6.9vw;
+    top: -2vw;
+}
+
+h3 {
+    position: absolute;
+    top: 0.3rem; 
+    left: -3rem;
+    font-size: 6rem;
+    font-weight: 600;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+h3.b {
+    left: 10rem;
+}
+
+.show {
+    opacity: 1;
+    transition: all 1.5s;
+    filter: blur(0);
+    transform: translateX(0);
 }
