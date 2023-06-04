@@ -11,10 +11,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("https://wallpapercave.com/wp/wp5904729.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .header {
     width: 80vw;
     margin: 0 auto;
-    background-color: var(--darkBlue);
+    background-color: #00438ccc;
     border-radius: 3rem 3rem 0 0;
     margin-bottom: 3px;
 }
@@ -22,7 +29,7 @@
 .container {
     width: 80vw;
     margin: 0 auto;
-    background-color: var(--lightBlue);
+    background-color: #0085c7cc;
     border-radius: 0 0 3rem 3rem;
 }
 
@@ -87,12 +94,3 @@ p>a:active {
     height: 400px;
     width: calc(16 / 9 * 400px);
 }
-
-/* .il {
-    width: 0;
-    height: 0;
-    background-color: transparent;
-    border-top: 100px solid transparent;
-    border-right: 100px solid black;
-    border-bottom: 100px solid transparent;
-} */
