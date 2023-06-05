@@ -29,7 +29,10 @@ body {
     position: relative;
     font-size: 45px;
     font-weight: 600;
+    opacity: 0;
+    filter: blur(5px);
 }
+
 
 div.tip {
     width: 0;
@@ -112,4 +115,21 @@ h2 {
 
 img {
     height: 250px;
+}
+
+.show, 
+.first.show,
+.second.show {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all 1.5s;
+}
+
+.first {
+    transform: translateX(-100%);
+}
+
+.second {
+    transform: translateX(100%);
 }

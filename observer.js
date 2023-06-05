@@ -9,5 +9,7 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 const links = document.querySelectorAll("a");
+const arrows = document.querySelectorAll(".arrow");
 
 links.forEach((link) => observer.observe(link));
+arrows.forEach((arrow) => observer.observe(arrow));
