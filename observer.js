@@ -10,4 +10,4 @@ const observer = new IntersectionObserver((entries) => {
 
 const links = document.querySelectorAll("a");
 
-links.forEach(link => observer.observe(link));
+links.forEach((link) => observer.observe(link));
