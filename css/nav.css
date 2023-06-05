@@ -45,15 +45,3 @@ li:hover {
 a.dark {
     color: var(--darkBlue);
 }
-
-/* Styles für Einfluss.html */
-
-.container {
-    width: 60%;
-    margin: 2rem auto;
-    overflow: scroll;
-}
-
-.container>p {
-    font-size: 24px;
-}

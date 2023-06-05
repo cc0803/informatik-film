@@ -17,7 +17,9 @@ const observer = new IntersectionObserver((entries) => {
 const objects = document.querySelectorAll(".arrow");
 const overlay = document.querySelector(".overlay")
 const awards = document.querySelectorAll(".award");
+const title = document.querySelector(".title")
 
 objects.forEach(object => observer.observe(object))
 observer.observe(overlay);
 awards.forEach(award => observer.observe(award));
+observer.observe(title);

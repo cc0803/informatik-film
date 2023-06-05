@@ -138,7 +138,7 @@ h3.b {
 }
 
 .awards {
-    height: 120vh;
+    height: 160vh;
     width: 100vw;
     background-color: #333;
     flex-direction: row;
@@ -190,4 +190,60 @@ h5 {
     font-size: 24px;
     font-weight: 500;
     text-align: center;
+}
+
+.info {
+    background-color: #333;
+}
+
+h2 {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 45px;
+    padding: 2rem;
+    background-color: #555;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem black;
+}
+
+.text {
+    margin: 4rem auto 2rem auto;
+    width: clamp(35ch, 60%, 70ch);
+    font-size: 24px;
+    text-align: justify;
+}
+
+.underline {
+    text-decoration: underline;
+    text-align: start;
+}
+
+.text>p {
+    margin: 1rem 0;
+}
+
+.text>p>span {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.text:last-of-type {
+    padding-bottom: 20vh;
+}
+
+.title {
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.title.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.5s;
+}
+
+html {
+    background-color: #333;
 }
